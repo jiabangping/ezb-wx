@@ -1,0 +1,150 @@
+	body{
+		background: #EEEEEE;
+	}
+	@media screen and (max-width: 600px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+ 		.modal-dialog {
+	   		width: 250px;
+	   		margin: 30px auto;
+		}
+	}
+	
+.content {
+    font-size: 13px;
+    margin-top:10px;
+}
+
+.topNavBar {
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    border-top: 2px solid darkgray;
+    border-bottom: 1px solid darkgray;
+}
+
+.auto_heightBox{
+    display:block;
+    height: 91px;
+    position: relative;
+}
+
+/*inline-block的前世今生*/
+.auto_heightBox:after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.auto_heightBox .inline_block{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+
+
+@media (min-width: 200px){
+    .form-horizontal .control-label {
+        padding-top: 0px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+}
+.row_content{
+   /*  height: 91px; */overflow: hidden;background: #FFFFFF;border-radius: 0px;margin-bottom:0;
+}
+.chartBox{
+	display:inline-block;
+	margin:0 auto;
+	/* width:155px; */
+	/* height:60px; */
+	/* background:url(../../img/chart-bg.png); */
+	background-size:155px 56px;
+	background-repeat:no-repeat;
+	color:#666666;
+}
+
+.row_content .left{
+    text-align: center;
+}
+.row_content .left img{width: 65px;height:65px;border-radius:50%;}
+.row_content .right {
+    display:inline-block;line-height: 1.42857143;
+    font-size: 13px;
+    color: #666666;
+}
+.row_content .right .name {
+    font-size: 18px;font-weight:bold;color: #333333;
+    margin-bottom: 4px;
+}
+.row_content .right .secondRow {
+    margin-bottom: 4px;
+}
+
+li{list-style: none}
+.star {
+
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -2px;
+    /*left: 90px;;*/
+}
+.star img{
+    width: 20px;
+    height: 20px;
+}
+
+.star li{
+    float: left;
+    margin-right: 2px;
+}
+
+.orderAndEvaluateCount{
+	padding-left:10px;background: #FFFFFF;margin-right: -15px;margin-left: -15px;border-top:1px dashed #dddddd;height:44px;line-height: 44px;color: #666666;font-size: 13px;
+}
+.orderCount{
+	margin-left: 0px
+}
+
+.evaluateCount {
+	margin-left: 25%;
+}
+.evaluateCount span{
+	margin-left: 0px
+}
+
+.startRow{
+	padding-left:10px;height:44px;line-height:44px;background: #FFFFFF;margin-right: -15px;margin-left: -15px;margin-top:10px;position: relative
+}
+.startRow .startNum{
+	padding-top: 3px;font-size: 18px;color: #FA952F;margin-left: 10px;
+}
+
+.skilledFieldTitle{
+	padding-left:10px;background: #FFFFFF;margin-right: -15px;margin-left: -15px;margin-top:10px;height: 40px;line-height: 40px;font-size: 14px; color: #999999;border-bottom: 1px solid #ededed
+}
+.skilledField{
+	padding:10px;background: #FFFFFF;margin-right: -15px;margin-left: -15px;font-size: 15px;line-height: 1.8em;padding-bottom: 20px;
+}
+.descriptionTitle{
+	padding-left:10px;padding-right:10px;padding-bottom: 10px; background: #FFFFFF;margin-right: -15px;margin-left: -15px;font-size: 14px; color: #999999;border-bottom: 1px solid #ededed
+}
+.description{
+	padding:10px;background: #FFFFFF;margin-right: -15px;margin-left: -15px;font-size: 15px;
+	line-height: 1.8em;
+}
+
+
+/*底部加载中的样式*/
+/*底部加载中的样式*/
+@charset "utf-8";
+.maskAlert{margin:0;padding:0;border:none;width:100%;height:100%;background:#333;opacity:0.6;filter:alpha(opacity=60);z-index:999;position:fixed;top:0;left:0;display:block;}
+.pos2{text-align: center;position: fixed;left: 0;z-index: 10000;bottom: 0;padding-left:0;padding-right:0}/*top:20%;*/
+.body{background-color:#ffffff;width: 200px;height: 100px;display:inline-block;position: relative;border-radius: 4px;background-color:#B4CDE6}
+.head{background:#f7f7f7;padding:0px 20px;line-height:25px;height:25px;font-weight:bold;color:#666;font-size:20px;background:#E1E6F6}
+.title{padding-right: 0;display: inline-block;position: absolute;left: 5px;text-decoration: none;}
+/*.row{height:77px;line-height:77px;padding:0px 30px;font-family:华文楷体;font-size:x-large;} */
+.alertContent{height: 75px;line-height: 75px;font-size: 18px;color:blue}
+.close_btn{font-family:arial;font-size:30px;font-weight:700;color:#999;float:right;padding-right:4px;
+    padding-right: 0;display: inline-block;position: absolute;right: 5px;text-decoration: none}
+#maskAlert{display:none;}
+

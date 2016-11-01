@@ -1,0 +1,62 @@
+ input.error {
+     border: dashed 1px red;
+}
+label.error {
+	color: Red;
+}
+
+textarea.error{
+	border: dashed 1px red;
+}
+div.error{
+	border: dashed 1px red;
+}
+a.error{
+	border: dashed 1px red;
+}
+ 
+ .fileBox{
+ 	border:1px solid #CCCCCC;
+ 	border-left:none;
+ 	line-height:34px;
+	float: left;
+	height: 32px;
+	color:#00abec;
+	font-size:14px;
+	width:84px;
+	height:32px;
+	
+	border-radius:3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    font-weight:bold;
+    
+    z-index:10000px;
+    background: white;
+   
+    margin-top:1px;
+    margin-right:1px;
+}
+
+ .selectFile{
+	text-align:center;
+	padding-top:8px;
+	font-size:15px;
+	font-weight:800;
+	clear:both;
+}
+.inputstyle{
+   	width:78px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 30px;
+    outline: medium none;
+    position: absolute;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    opacity:0; 
+    left:0px;
+    top: 0px;
+}

@@ -1,0 +1,18 @@
+#signIn{
+	background: #00abec;
+}
+#warn{
+	color:red;font-size:13px;margin-bottom:8px;display:block;
+}
+
+.top {
+  margin-top: 13px;;
+}
+.top .pageHead{
+	margin-bottom:20px;
+}
+.pageHead .headTitle{
+	text-align:center;font-size:20px;
+}
+.headTitle a{inline-block;right:20px;position:absolute;text-decoration:none;color:black;font-size:15px;top:5px;}
+

@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+.maskAlert{margin:0;padding:0;border:none;width:100%;height:100%;background:#333;opacity:0.6;filter:alpha(opacity=60);z-index:999;position:fixed;top:0;left:0;display:block;}
+.pos{text-align: center;position: absolute;left: 0;top:20%;z-index: 10000;}
+.body{background-color:#ffffff;width: 200px;height: 100px;display:inline-block;position: relative;border-radius: 4px;background-color:#B4CDE6}
+.head{background:#f7f7f7;padding:0px 20px;line-height:25px;height:25px;font-weight:bold;color:#666;font-size:20px;background:#E1E6F6}
+.title{padding-right: 0;display: inline-block;position: absolute;left: 5px;text-decoration: none;}
+/*.row{height:77px;line-height:77px;padding:0px 30px;font-family:华文楷体;font-size:x-large;} */
+.alertContent{height: 75px;line-height: 75px;font-size: 18px;color:blue}
+.close_btn{font-family:arial;font-size:30px;font-weight:700;color:#999;float:right;padding-right:4px;
+    padding-right: 0;display: inline-block;position: absolute;right: 5px;text-decoration: none}
+#maskAlert{display:none;}

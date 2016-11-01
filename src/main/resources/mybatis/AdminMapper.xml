@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ezhuanbing.api.dao.mybatis.mapper.AdminMapper">
+  <resultMap id="BaseResultMap" type="com.ezhuanbing.api.model.Admin">
+    <result column="login" jdbcType="VARCHAR" property="login" />
+    <result column="hospitalId" jdbcType="INTEGER" property="hospitalId" />
+    <result column="online" jdbcType="CHAR" property="online" />
+    <result column="neteasetoken" jdbcType="VARCHAR" property="neteasetoken" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    login, hospitalId, online, neteasetoken
+  </sql>
+</mapper>

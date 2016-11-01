@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta charset="gb2312" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="apple-itunes-app" content="app-id=597101749" /><link rel="apple-touch-icon" href="logo.png" /><title>
+	秦医通移动端下载
+</title><link rel="stylesheet" type="text/css" href="css/style.css?v=20141215" /></head>
+<body>
+    
+    <div id="header">
+        <img src="images/logo.png" style="width: 210px; height: 65px;display:block;margin:20px auto" />
+    </div>
+    <div style="clear: both;"></div>
+    <div id="main" style="height:100%">
+        <div class="title clearfix" style="text-align:center">
+            <span class="name">秦医通</span>
+        </div>
+
+		<div id="pc_display">
+			<div id="pc_title" class="name3" style="text-align:center;margin-top:15px">PC端下载</div>
+				 <div id="pc_part" style="width:300px;margin-left:36%;margin-bottom:15px">
+					 <div id="doctor_pc_down" class="btn android" onclick="javascript:window.location.href='http://testupdate.zhongyinginfo.com/pc/main/eDoctorSetup_1.0.0.exe'">
+						<div>
+							<img src="images/computer.png"><span>PC版下载</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id='mt' class="name3" style="text-align:center">移动端下载</div>
+			<div id="pc_ios_part" style="height:auto; float:left; display:inline;margin-left:36%">
+				<div id="doctor_iphone_down" class="btn iphone" onclick="javascript:window.location.href='https://itunes.apple.com/cn/app/e-hui-zhen-yi-sheng-duan/id995983111?l=zh&ls=1&mt=8'">
+					<div>
+						<img src="images/iphone.png"><span>IPhone版下载</span>
+					</div>
+				</div>
+				<div id="doctor_iphone_down_img" class="erweima">
+					<img width="100" height="100" src="images/ios_doctor.png"><!--<span>扫描二维码直接下载</span>-->
+				</div>
+			</div>
+
+			<div id="mobile_ios_part" style="height:auto;margin-left:14%;display:none">
+				<div id="doctor_iphone_down" class="btn iphone" onclick="javascript:window.location.href='https://itunes.apple.com/cn/app/e-hui-zhen-yi-sheng-duan/id995983111?l=zh&ls=1&mt=8'">
+					<div>
+						<img src="images/iphone.png"><span>IPhone版下载</span>
+					</div>
+				</div>
+				<div id="doctor_iphone_down_img" class="erweima">
+					<img width="100" height="100" src="images/ios_doctor.png"><!--<span>扫描二维码直接下载</span>-->
+				</div>
+			</div>  
+	  
+			<div id="pc_android_part" style="height:auto; float:left; display:inline">
+				<div id="doctor_android_down" class="btn android" onclick="javascript:window.location.href='http://update.zhongyinginfo.com/clinic/ezhuanbing/qinyitong_1.0.apk'">
+					<div>
+						<img src="images/android.png"><span>Android版下载</span>
+					</div>
+				</div>
+				<div id="doctor_android_down_img" class="erweima">
+					<img width="100" height="100" src="images/doctor.jpg"><!--<span>扫描二维码直接下载</span>-->
+				</div>
+			</div>
+			
+			<div id="mobile_android_part" style="height:auto;margin-left:14%;display:none">
+				<div id="doctor_android_down" class="btn android" onclick="javascript:window.location.href='http://update.zhongyinginfo.com/clinic/ezhuanbing/qinyitong_1.0.apk'">
+					<div>
+						<img src="images/android.png"><span>Android版下载</span>
+					</div>
+				</div>
+				<div id="doctor_android_down_img" class="erweima">
+					<img width="100" height="100" src="images/doctor.jpg"><!--<span>扫描二维码直接下载</span>-->
+				</div>
+			</div>
+
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+
+
+	<div style="clear: both;"></div>
+    
+   <!--  <div id="footer" style="height:40px">
+        <span style="line-height:40px">Copyright@2016西安众盈医疗</span>
+    </div> -->
+</body>
+</html>
+<script language="javascript">
+    window.onload = function () {
+        var u = navigator.userAgent;
+		//alert(u.indexOf('Android'))
+		//alert(u.indexOf('iPhone'))
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
+            document.getElementById("pc_ios_part").style.display = "none";
+			document.getElementById("pc_title").style.display = "none";
+			document.getElementById("pc_part").style.display = "none";
+			document.getElementById("pc_android_part").style.display = "none";
+			document.getElementById("mobile_ios_part").style.display = "none";
+	//	$('#mt').attr({'margin-left':'none'})
+	//$('#mt').css({'text-align':'center'})
+			document.getElementById("mobile_android_part").style.display = "block";
+			//document.getElementById("pc_title").style.display = "none";
+			//document.getElementById("pc_blank").style.display = "none";
+			//document.getElementById("doctor_iphone_down").style.display = "none";
+            //document.getElementById("doctor_iphone_down_img").style.display = "none";
+			//document.getElementById("pc_display").style.display = "none";
+        } else if (u.indexOf('iPhone') > -1) {//苹果手机
+			//document.getElementById("doctor_pc_down").style.display = "none";
+			//document.getElementById("pc_title").style.display = "none";
+			//document.getElementById("pc_blank").style.display = "none";
+            //document.getElementById("doctor_android_down").style.display = "none";
+            //document.getElementById("doctor_android_down_img").style.display = "none";
+			 document.getElementById("pc_android_part").style.display = "none";
+			 document.getElementById("pc_ios_part").style.display = "none";
+			 document.getElementById("pc_title").style.display = "none";
+			 document.getElementById("pc_part").style.display = "none";
+			 document.getElementById("mobile_android_part").style.display = "none";
+		// $('#mt').attr({'margin-left':'none'})
+		//$('#mt').css({'text-align':'center'})
+				
+			 document.getElementById("mobile_ios_part").style.display = "block";
+        }
+    }
+</script>
